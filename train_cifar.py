@@ -39,10 +39,6 @@ parser.add_argument('--print-freq', '-p', default=10, type=int,
 					help='print frequency (default: 10)')
 parser.add_argument('--resume', default='', type=str,
 					help='path to latest checkpoint (default: none)')
-parser.add_argument('--name', default='ResNet', type=str,
-					help='name of experiment')
-parser.add_argument('--data-checkpoint', type=int, default=20,
-					help='How many epochs to checkpoint data at.')
 parser.add_argument('--reg-type', choices=reg_types, default="none",
 					help=' | '.join(reg_types))
 parser.add_argument('--dataset', choices=["cifar10", "cifar100"], default="cifar10",
